@@ -159,7 +159,7 @@ It should work now!  What is the output?
 ----------
 
 lab-04-version-control Catherineclous$ cd /
-Catherineclous$ hello.sh
+Catherinecloud$ hello.sh
 hi there!
 
 ==========
