@@ -109,7 +109,7 @@ hi there!
 ----------
 cd Users/CatherineCloud
 pwd
-
+Users/Catherinecloud
 
 ==========
 14. Type in the following command:
@@ -119,6 +119,9 @@ echo $PATH
 Write down the output of this command
 ----------
 
+echo $PATH
+
+/opt/local/bin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 ==========
 15. Type in the following command to show all environment variables:
@@ -127,7 +130,8 @@ env
 
 Write down the last two lines of output for this command
 ----------
-
+_=/usr/bin/env
+OLDPWD=/
 
 ==========
 16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
@@ -140,7 +144,9 @@ echo $PATH
 
 Write down the output of the last command.  It should include your home folder.
 ----------
-
+/Users/Catherinecloud
+echo $PATH
+/opt/local/bin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/professor:/Users/student
 
 ==========
 17.  Go back to root (/)
@@ -152,6 +158,9 @@ hello.sh
 It should work now!  What is the output?
 ----------
 
+lab-04-version-control Catherineclous$ cd /
+Catherineclous$ hello.sh
+hi there!
 
 ==========
 18.  Save this file in the repository that you created from parts 1 and 2.
