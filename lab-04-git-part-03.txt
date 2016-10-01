@@ -17,7 +17,7 @@ Follow the instructions line-by-line.
 Write the command you used to do this below.
 ----------
 
-
+nano temp.txt
 
 ==========
 3. Open another terminal
@@ -29,6 +29,11 @@ Write the command you used to do this below.
 
 Write the command that you used to do this, and the last two lines of output.
 ----------
+ps aux
+
+root             1129   0.0  0.1  2507872   4448 s000  Ss    1:54PM   0:00.02 l
+catherinecloud   1128   0.0  0.9  2620388  36960   ??  S     1:54PM   0:01.39 /
+
 
 
 ==========
@@ -36,26 +41,28 @@ Write the command that you used to do this, and the last two lines of output.
 
 Write the command that you used to do this, and all of the output.
 ----------
+ps aux | grep -i nano
 
+catherinecloud   1146   0.0  0.0  2434840    796 s000  S+    1:55PM   0:00.00 grep -i nano
 
 ==========
 5. Stop (kill) the process that's called nano "temp.txt" by using the process id shown in the output of your previous command (first number after user name).
 
 ----------
-
+kill 1146
 
 ==========
 6. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
 
 ----------
-
+Received SIGHUP or SIGTERM
 
 ==========
 7. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
 
 [NO OUTPUT]
 ----------
-
+nothing happens
 
 ==========
 8. Now... using nano, create a shell script in your home directory called hello.sh.  It should contain the following text exactly:
@@ -67,35 +74,41 @@ Quit and save when you're done.
 
 What command did you use to do this?
 ----------
-
+nano ~/hello.sh
 
 ==========
 9. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
 
 Write the commands that you used to do this below.
 ----------
-
+chmod u+x hello.sh
 
 ==========
 10. Run your script (hello.sh).
 
 How did you do this?  What was the output?
 ----------
+./hello.sh
+
+hi there!
 
 
 ==========
 11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
-
-
+cd /
+./hello.sh
+-bash: ./hello.sh: No such file or directory
 ==========
 12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
 ----------
-
-
+/Users/Catherinecloud/hello.sh
+hi there!
 ==========
 13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
 ----------
+cd Users/CatherineCloud
+pwd
 
 
 ==========
